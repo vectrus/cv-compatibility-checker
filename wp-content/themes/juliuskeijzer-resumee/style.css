@@ -1,0 +1,185 @@
+/*
+Theme Name: Julius Keijzer C.V. theme 2024
+Theme URI: https://wordpress.org/themes/twentytwentyfour/
+Author: julius
+Author URI: https://juliuskeijzer.nl
+Description: Theme developed for my personal c.v. Strictly wordpress. No plugins.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: juliuskeijzer
+Tags: C.V. Theme, Resumee
+*/
+
+
+:root {
+    --primary-orange: #FF8533;
+    --secondary-orange: #FF8533;
+    --dark-gray: #333333;
+    --medium-gray: #666666;
+    --light-gray: #F5F5F5;
+    --bs-primary-rgb : #323131;
+}
+
+@media print {
+    div, p, ul, li {
+        font-size: 12px;
+    }
+    .no-print, .no-print * {
+        display: none !important;
+    }
+    .print-only {
+        display: block !important;
+    }
+
+    .portfolio-item {
+        width: 100%;
+    }
+
+    div.timeline-item {
+        break-inside: avoid;
+    }
+    div.skill-row {
+        page-break-after: always;
+    }
+}
+.print-only {
+    display: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--dark-gray);
+}
+
+/* Header Styles */
+.site-header {
+    background-color: var(--light-gray);
+    padding: 2rem 0;
+    border-bottom: 3px solid var(--primary-orange);
+}
+
+.site-title {
+    color: var(--primary-orange);
+    font-weight: 700;
+}
+h1.home-page-title {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+.h5, h5 {
+    font-size: 0.9rem;
+}
+
+.h4, h4 {
+    font-size: 1.0rem;
+}
+
+.skill-meta {
+    font-size: 0.8rem;
+}
+a.social-link {
+    color: #fff;
+    cursor: pointer;
+}
+.social-link-icon {
+    width: 32px;
+    height: 32px;
+}
+
+@media screen and (min-width: 1024px) {
+    h1.home-page-title {
+        font-size: 4.6rem;
+        line-height: 1.1;
+        letter-spacing: -0.20rem;
+        color: #444;
+        margin-bottom: 40px;
+    }
+}
+/* Navigation */
+.navbar {
+    background-color: var(--dark-gray);
+}
+
+.nav-link {
+    color: white !important;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--primary-orange) !important;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: var(--bs-primary-rgb) !important;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--light-gray);
+    padding: 5rem 0;
+    page-break-after: always;
+}
+.experience-section,  .education-section {
+    page-break-after: always;
+}
+
+/* Section Styles */
+.section-title {
+    color: var(--primary-orange);
+    border-bottom: 2px solid var(--primary-orange);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    height: 40px;
+}
+
+/* Experience Timeline */
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-item {
+    padding: 2rem;
+    border-left: 3px solid var(--primary-orange);
+    margin-bottom: 2rem;
+    background-color: var(--light-gray);
+}
+
+/* Skills Section */
+.skill-category {
+    width: 100%;
+    display: inline-block;
+}
+.skill-item {
+    /*background-color: var(--light-gray);*/
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    width: auto;
+    float: left;
+}
+
+/* Portfolio Grid */
+.portfolio-item {
+    margin-bottom: 2rem;
+}
+
+.portfolio-item img {
+    height: auto;
+    max-height: 280px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--dark-gray);
+    color: white;
+    padding: 3rem 0;
+}
