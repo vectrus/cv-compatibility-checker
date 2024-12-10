@@ -8,4 +8,4 @@ define('ANTROPIC_KEY', 'YOUR ANTRPIC API KEY');
 
 Use shortcode: [cv_compatibility_checker]
 
-or in templates: <?php echo do_shortcode('[cv_compatibility_checker]') ?>
+or in templates: ```<?php echo do_shortcode('[cv_compatibility_checker]') ?>```
