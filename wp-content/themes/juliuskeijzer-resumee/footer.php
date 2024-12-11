@@ -39,6 +39,5 @@
 <?php wp_footer(); ?>
 
 
-<body onload="generatePDF()">
 </body>
 </html>

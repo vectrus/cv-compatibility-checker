@@ -2,9 +2,9 @@
 
 /**
  * Plugin Name: CV Compatibility Checker
- * Description: Analyzes job descriptions against your CV using Claude.ai
+ * Description: Analyzes job descriptions against your CV using Antropic.ai
  * Version: 1.0
- * Author: julius keijzer / claude
+ * Author: julius keijzer / Claude ;-)
  */
 
 // Prevent direct access

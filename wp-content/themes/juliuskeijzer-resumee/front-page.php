@@ -340,7 +340,7 @@ get_header(); ?>
 
                                 <?php if ($soft_skills) : ?>
                                     <div class="soft-skills no-print mb-2">
-                                        <h4 class="h6">Skills Applied:</h4>
+                                        <h4 class="h6">Soft skills:</h4>
                                         <div class="skills-tags">
                                             <?php
                                             $soft_ids = explode(',', $soft_skills);
@@ -359,13 +359,13 @@ get_header(); ?>
                                     <?php if ($project_url) : ?>
                                         <a href="<?php echo esc_url($project_url); ?>"
                                            class="btn btn-primary btn-sm me-2" target="_blank">
-                                            View Project
+                                            Bekijk
                                         </a>
                                     <?php endif; ?>
                                     <?php if ($github_url) : ?>
                                         <a href="<?php echo esc_url($github_url); ?>"
                                            class="btn btn-outline-secondary btn-sm" target="_blank">
-                                            View Code
+                                            Bekijk code
                                         </a>
                                     <?php endif; ?>
                                 </div>
